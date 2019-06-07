@@ -1,6 +1,9 @@
 import * as React from 'react';
 import { Button, View, Text } from 'react-native';
-import { createStackNavigator } from 'react-navigation-stack';
+import {
+  createStackNavigator,
+  CardStyleInterpolators,
+} from 'react-navigation-stack';
 
 class ListScreen extends React.Component {
   static navigationOptions = {
@@ -64,5 +67,6 @@ export default createStackNavigator(
   {
     initialRouteName: 'List',
     mode: 'modal',
+    cardStyleInterpolator: CardStyleInterpolators.forModalIOS,
   }
 );

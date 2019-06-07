@@ -160,6 +160,7 @@ export type TransitionSpec =
   | { timing: 'timing'; config: TimingConfig };
 
 export type CardInterpolationProps = {
+  index: number;
   progress: {
     current: Animated.Node<number>;
     next?: Animated.Node<number>;

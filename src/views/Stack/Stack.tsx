@@ -214,6 +214,7 @@ export default class Stack extends React.Component<Props, State> {
             return (
               <Card
                 key={route.key}
+                index={index}
                 active={index === self.length - 1}
                 transparent={transparentCard}
                 direction={direction}
